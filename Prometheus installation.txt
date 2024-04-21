@@ -1,0 +1,43 @@
+git clone https://github.com/techiescamp/kubernetes-prometheus
+
+
+kubectl create namespace monitoring
+
+
+kubectl get ns
+
+
+kubectl create -f clusterRole.yaml
+
+kubectl get clusterrole | grep prometheus
+
+kubectl get clusterrolebinding | grep prometheus
+
+
+kubectl create -f config-map.yaml
+
+kubectl get configmap -n monitoring
+
+
+
+kubectl create  -f prometheus-deployment.yaml 
+
+kubectl get pods -n monitoring
+
+vim prometheus-deployment.yaml (if u want to increase replicas)
+kubectl apply -f prometheus-deployment.yaml
+
+kubectl get deployment -n monitoring (to see)
+
+
+kubectl create -f prometheus-service.yaml --namespace=monitoring
+kubectl get services -n monitoring (to see)
+
+--copy the public IP of master server with 30000 port and run in other tab.
+
+
+
+
+
+
+

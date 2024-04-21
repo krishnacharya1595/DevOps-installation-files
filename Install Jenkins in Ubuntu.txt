@@ -1,0 +1,40 @@
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+/etc/apt/sources.list.d/jenkins.list > /dev/null
+
+
+sudo apt-get update
+sudo apt-get install fontconfig openjdk-17-jre
+sudo apt-get install jenkins
+
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAikZDKUJouqMb83gOrRdARdXHHTVBr8WQk3RIJBuon7TZKnnS
+h1Ku+qT8rzr86e2doKucwmDNOuuaqFEn43yPP62Beott97HUF01k4FugVsGhuL23
+xa/nLKvb6VbduaiUQ9GRIU7Yq2MmL0MFVANzAFrZhACKznKBQ0mlSLfW0jrVFFAo
+qVwvAtn7MO7H8VTB8zr/ZfPIlQOlLF9Of+Rrq7Hb5zbJYQigN+FW6nM/wMCVfnQ8
+Wc3KU8GmwZCG2Ck3wED1D+ISFPPnboJFi9hh/LhDX3fYCH4Ut1CGdL1x6o7mgZHT
+VfRaed8VWvWdFwpdxT2e1mnzwwPoigPE0b8SgwIDAQABAoIBACCX30zicn1L5VLG
+ge8bA/NyKLUh0JH2J9YaGscoHd9HackxXga33rcGHOnRJbyeXgF5ckH/P2EcGCCE
+wLpGqh2AcHzKUOmJ6Ux02cpozqqkidJaJe9bP0qwV+3wo+MXcZtq0qLfSwNbI60Q
+Rzk+duUmhQ8wcYeoRf/uZB939hMnoeinyP8qbUFDkbi5ja/U24BJRXozDKIZ1eRf
+tcp1IXJX+VwEz6ZObLEladZ+UuTQsvfg4zzCtx9uV8/1m/GA3bNfEZX1rvxk49tt
+MpmB1XtchCGGqCJjT7SfHo58zhUAe1f+TuhaSwrCEQx7qEbGyj4iSTdQd8i2jw9n
+TBi8sEECgYEAzvGscZ+KR22u4kyznxh6GD7q7RYtYlT+AHn4LfzEefD+1hl0ObA8
+oDGeMR1+hfBOGAvdEYQcKUz4bNhgYBpgJBpGR/CaEpv9Ps2lluDgkhK7T6sZ87/2
+ArZuRVNmwMmK5DxPhox73M+AOf0Ql9f8JKhAggLtjJ6I9JQ9/iJTWKcCgYEAqw1m
+TlKL1RgBSXmWZYr9vV9i7x8+h9amuHrk51ZENGwxK+s4wZ6Imlj0FY/WNfvfNEHf
+PF+aww/5wsFTe95RpBVlDQW05EKtNWqfM2VLFdOuvel7j40lzGdAEGH6nCcBWgbK
+Et/bEcyfW3UEXJJ1vxBRtJi6VG4WEWzZ3oxGlsUCgYBEocQGHto2XDr+1F9R6UU8
+20kAfjVpAjUHJWxYnBbxNireCK0SIM/KdQo40cZPV2Ye9XhIwd6xF9TgDFbSKI0w
+DAK5AyOl/lPby0oaotP3vfyfLGi7/TLyrVwe480VLQJCNXpObjL6BVtKYBJruXbn
+FWHnfF8aHs3fB3cT3IB1ywKBgAibmgRi/wpwNNBfwAPIJNC81hu2dM0dLjKmbJJ/
+str4ftj481g7BCDQTSgwntUEoczda8B8Byu9yBHW7L6VB4K8WON44AuEl3bSsMRD
+Wq30gxynfUJSFg7dO0oXxCbLh7PiF5UvkrSomXRexSNrc2V0CsiNzwKkr5Oc6LHc
+WUkJAoGBALHA4RlklmDGAnhDfmYsUstIBGwc7sd68RHhD/ry75jVx4MYKahR4C2M
+MjQ5R4RuAYf98AcZ09oovQXpraE3AvqWiBwQcjZIRTBpcKSSfOnF3OZFBaPNpOOE
+qFprNxkqGPupttVrd8Rpn3smHOTHDU1HZ1PYWdOj0YAU0Ct18f6i
+-----END RSA PRIVATE KEY-----

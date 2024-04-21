@@ -1,0 +1,25 @@
+git clone https://github.com/bibinwilson/kubernetes-grafana.git
+
+cd kubernetes-grafana
+
+ls -l
+
+kubectl create -f grafana-datasource-config.yaml
+
+kubectl get configmap -n monitoring (to see)
+
+kubectl create -f deployment.yaml
+
+kubectl get deployment -n monitoring (to see)
+
+kubectl create -f service.yaml
+
+kubectl get services -n monitoring (to see)
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+
+eval `ssh-agent`
+ssh-add /path/to/your/private/key
